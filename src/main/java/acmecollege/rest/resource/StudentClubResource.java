@@ -42,7 +42,7 @@ import acmecollege.ejb.ACMECollegeService;
 import acmecollege.entity.StudentClub;
 import acmecollege.entity.ClubMembership;
 
-@Path("studentclub")
+@Path("/studentclub")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class StudentClubResource {

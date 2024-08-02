@@ -11,6 +11,7 @@
 package acmecollege.rest.resource;
 
 import static acmecollege.utility.MyConstants.CREDENTIAL_RESOURCE_NAME;
+import static acmecollege.utility.MyConstants.SLASH;
 import static javax.ws.rs.core.Response.Status.UNAUTHORIZED;
 
 import java.security.Principal;
@@ -28,7 +29,7 @@ import org.glassfish.soteria.WrappingCallerPrincipal;
 
 import acmecollege.entity.SecurityUser;
 
-@Path(CREDENTIAL_RESOURCE_NAME)
+@Path(SLASH+CREDENTIAL_RESOURCE_NAME)
 @Produces(MediaType.APPLICATION_JSON)
 public class CredentialResource {
 

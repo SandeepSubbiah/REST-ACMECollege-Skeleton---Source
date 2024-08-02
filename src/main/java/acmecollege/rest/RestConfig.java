@@ -1,9 +1,5 @@
 package acmecollege.rest;
 
-import static acmecollege.utility.MyConstants.ADMIN_ROLE;
-import static acmecollege.utility.MyConstants.APPLICATION_API_VERSION;
-import static acmecollege.utility.MyConstants.USER_ROLE;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +7,10 @@ import javax.annotation.security.DeclareRoles;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-@ApplicationPath(APPLICATION_API_VERSION)
+import static acmecollege.utility.MyConstants.*;
+
+//@ApplicationPath(APPLICATION_CONTEXT_ROOT + APPLICATION_API_VERSION)
+@ApplicationPath("/rest-acmecollege/api/v1")
 @DeclareRoles({USER_ROLE, ADMIN_ROLE})
 public class RestConfig extends Application {
 

@@ -23,7 +23,7 @@ import acmecollege.entity.Professor;
 import acmecollege.entity.SecurityUser;
 import acmecollege.entity.Student;
 
-@Path("/api/v1/students")
+@Path("/students")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class StudentResource {
